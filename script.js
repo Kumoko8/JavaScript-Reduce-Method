@@ -8,10 +8,17 @@
 
 var reduce = function (nums, fn, init) {
     let val = init;
-    for (let i = 0; i <= nums.length; i++) {
-        val = fn(init, nums[i])
+    for (let i = 0; i < nums.length; i++) {
+        val = fn(val, nums[i])
     }
-    return val
+    return val;
 
-};
+}
+const nums = [1,2,3,4]
+
+const result = reduce(nums, function(accum, curr) {
+    return accum + curr;
+}, 0);
+
+console.log(result)
 
