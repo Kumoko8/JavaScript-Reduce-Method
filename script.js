@@ -14,7 +14,7 @@ var reduce = function (nums, fn, init) {
     return val;
 
 }
-const nums = [1,2,3,4]
+const nums = [1,2,3,4, 5]
 
 const result = reduce(nums, function(accum, curr) {
     return accum + curr;
