@@ -22,3 +22,4 @@ const result = reduce(nums, function(accum, curr) {
 
 console.log(result)
 
+//Here I needed to define my parameters and create a loop to iterate through the array, then define a function as an argument for the first function
